@@ -1,24 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MotionDetectionTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ye9-cf-xV1" customClass="CapturePreviewView" customModule="MotionDetectionTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yb0-JF-tdE">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEG-Ip-0ya">
+                                <rect key="frame" x="742" y="50" width="60" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="NCz-8Z-8QB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="21"/>
+                                <state key="normal" title="STOP">
+                                    <color key="titleColor" systemColor="systemGray4Color"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPt-MO-JEx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rkt-HJ-UUA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yb0-JF-tdE" firstAttribute="leading" secondItem="ye9-cf-xV1" secondAttribute="leading" id="SK5-3k-tNL"/>
+                            <constraint firstItem="ye9-cf-xV1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XNn-mF-aCE"/>
+                            <constraint firstItem="ye9-cf-xV1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XWo-2g-lJV"/>
+                            <constraint firstItem="yb0-JF-tdE" firstAttribute="bottom" secondItem="ye9-cf-xV1" secondAttribute="bottom" id="g9j-xu-UfM"/>
+                            <constraint firstItem="yb0-JF-tdE" firstAttribute="top" secondItem="ye9-cf-xV1" secondAttribute="top" id="hMG-iI-30V"/>
+                            <constraint firstItem="ye9-cf-xV1" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="j1M-nJ-Fg4"/>
+                            <constraint firstItem="yb0-JF-tdE" firstAttribute="trailing" secondItem="ye9-cf-xV1" secondAttribute="trailing" id="mZs-k6-u2W"/>
+                            <constraint firstItem="ye9-cf-xV1" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="pAI-Li-Fmd"/>
+                            <constraint firstItem="zEG-Ip-0ya" firstAttribute="top" secondItem="rkt-HJ-UUA" secondAttribute="top" constant="50" id="szF-Ss-bdw"/>
+                            <constraint firstItem="rkt-HJ-UUA" firstAttribute="trailing" secondItem="zEG-Ip-0ya" secondAttribute="trailing" constant="50" id="zhi-jW-61A"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="yb0-JF-tdE" id="xGD-NK-2le"/>
+                        <outlet property="previewView" destination="ye9-cf-xV1" id="Xb2-xk-aOk"/>
+                        <outlet property="stopButton" destination="zEG-Ip-0ya" id="hIa-x1-hbX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="104"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  MotionDetectionTest
+//  VisionTest
 //
-//  Created by Jakub Tomanik on 05/02/2021.
+//  Created by Jakub Tomanik on 19/12/2020.
 //
 
 import UIKit

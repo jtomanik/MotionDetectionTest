@@ -8,22 +8,61 @@
 
 /* Begin PBXBuildFile section */
 		7A416A6E25CD95DC0085E365 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A6D25CD95DC0085E365 /* AppDelegate.swift */; };
-		7A416A7025CD95DC0085E365 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A6F25CD95DC0085E365 /* SceneDelegate.swift */; };
 		7A416A7225CD95DC0085E365 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A7125CD95DC0085E365 /* ViewController.swift */; };
 		7A416A7525CD95DC0085E365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A416A7325CD95DC0085E365 /* Main.storyboard */; };
 		7A416A7725CD95DD0085E365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A416A7625CD95DD0085E365 /* Assets.xcassets */; };
 		7A416A7A25CD95DD0085E365 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A416A7825CD95DD0085E365 /* LaunchScreen.storyboard */; };
+		7A416A8425CD98110085E365 /* CapturePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A8325CD98110085E365 /* CapturePreviewView.swift */; };
+		7A416AA125CD987D0085E365 /* VideoVisionAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A8B25CD987D0085E365 /* VideoVisionAnalysis.swift */; };
+		7A416AA225CD987D0085E365 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A8C25CD987D0085E365 /* VideoCapture.swift */; };
+		7A416AA325CD987D0085E365 /* VideoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A8D25CD987D0085E365 /* VideoWriter.swift */; };
+		7A416AA425CD987D0085E365 /* RunnablePipelineUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A8F25CD987D0085E365 /* RunnablePipelineUnit.swift */; };
+		7A416AA525CD987D0085E365 /* VideoPipelineError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A9025CD987D0085E365 /* VideoPipelineError.swift */; };
+		7A416AA625CD987D0085E365 /* VideoPipelineUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A9125CD987D0085E365 /* VideoPipelineUnit.swift */; };
+		7A416AA725CD987D0085E365 /* VideoReceivingPipelineUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A9225CD987D0085E365 /* VideoReceivingPipelineUnit.swift */; };
+		7A416AA825CD987D0085E365 /* VideoSendingPipelineUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A9325CD987D0085E365 /* VideoSendingPipelineUnit.swift */; };
+		7A416AA925CD987D0085E365 /* VideoOpticalFlowVisualisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A9425CD987D0085E365 /* VideoOpticalFlowVisualisation.swift */; };
+		7A416AAA25CD987D0085E365 /* VideoReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A9525CD987D0085E365 /* VideoReader.swift */; };
+		7A416AAC25CD987D0085E365 /* VideoPreProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A9725CD987D0085E365 /* VideoPreProcessing.swift */; };
+		7A416AAD25CD987D0085E365 /* VideoProcessingPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A9825CD987D0085E365 /* VideoProcessingPipeline.swift */; };
+		7A416AAE25CD987D0085E365 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A9A25CD987D0085E365 /* Math.swift */; };
+		7A416AAF25CD987D0085E365 /* CGImage+RawBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A9B25CD987D0085E365 /* CGImage+RawBytes.swift */; };
+		7A416AB025CD987D0085E365 /* MLMultiArray+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A9C25CD987D0085E365 /* MLMultiArray+Image.swift */; };
+		7A416AB125CD987D0085E365 /* OpticalFlowVisualizerFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416A9D25CD987D0085E365 /* OpticalFlowVisualizerFilter.swift */; };
+		7A416AB225CD987D0085E365 /* OpticalFlowVisualizer.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = 7A416A9E25CD987D0085E365 /* OpticalFlowVisualizer.cikernel */; };
+		7A416ABE25CDE3380085E365 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A416ABD25CDE3380085E365 /* SceneDelegate.swift */; };
+		7A416AC225CDE3650085E365 /* testvideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A416AC125CDE3650085E365 /* testvideo.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A1BDBB325CF3A0C009ECFAD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7A416A6A25CD95DC0085E365 /* MotionDetectionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionDetectionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A416A6D25CD95DC0085E365 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7A416A6F25CD95DC0085E365 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7A416A7125CD95DC0085E365 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7A416A7425CD95DC0085E365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A416A7625CD95DD0085E365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A416A7925CD95DD0085E365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A416A7B25CD95DD0085E365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A416A8325CD98110085E365 /* CapturePreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturePreviewView.swift; sourceTree = "<group>"; };
+		7A416A8B25CD987D0085E365 /* VideoVisionAnalysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVisionAnalysis.swift; sourceTree = "<group>"; };
+		7A416A8C25CD987D0085E365 /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		7A416A8D25CD987D0085E365 /* VideoWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoWriter.swift; sourceTree = "<group>"; };
+		7A416A8F25CD987D0085E365 /* RunnablePipelineUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunnablePipelineUnit.swift; sourceTree = "<group>"; };
+		7A416A9025CD987D0085E365 /* VideoPipelineError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPipelineError.swift; sourceTree = "<group>"; };
+		7A416A9125CD987D0085E365 /* VideoPipelineUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPipelineUnit.swift; sourceTree = "<group>"; };
+		7A416A9225CD987D0085E365 /* VideoReceivingPipelineUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoReceivingPipelineUnit.swift; sourceTree = "<group>"; };
+		7A416A9325CD987D0085E365 /* VideoSendingPipelineUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSendingPipelineUnit.swift; sourceTree = "<group>"; };
+		7A416A9425CD987D0085E365 /* VideoOpticalFlowVisualisation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoOpticalFlowVisualisation.swift; sourceTree = "<group>"; };
+		7A416A9525CD987D0085E365 /* VideoReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoReader.swift; sourceTree = "<group>"; };
+		7A416A9725CD987D0085E365 /* VideoPreProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPreProcessing.swift; sourceTree = "<group>"; };
+		7A416A9825CD987D0085E365 /* VideoProcessingPipeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoProcessingPipeline.swift; sourceTree = "<group>"; };
+		7A416A9A25CD987D0085E365 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		7A416A9B25CD987D0085E365 /* CGImage+RawBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+RawBytes.swift"; sourceTree = "<group>"; };
+		7A416A9C25CD987D0085E365 /* MLMultiArray+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Image.swift"; sourceTree = "<group>"; };
+		7A416A9D25CD987D0085E365 /* OpticalFlowVisualizerFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpticalFlowVisualizerFilter.swift; sourceTree = "<group>"; };
+		7A416A9E25CD987D0085E365 /* OpticalFlowVisualizer.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpticalFlowVisualizer.cikernel; sourceTree = "<group>"; };
+		7A416ABD25CDE3380085E365 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7A416AC125CDE3650085E365 /* testvideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testvideo.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +76,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A1BDBB425CF3B07009ECFAD /* Frame Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7A416A8C25CD987D0085E365 /* VideoCapture.swift */,
+				7A416A8D25CD987D0085E365 /* VideoWriter.swift */,
+				7A416A9525CD987D0085E365 /* VideoReader.swift */,
+			);
+			path = "Frame Sources";
+			sourceTree = "<group>";
+		};
 		7A416A6125CD95DC0085E365 = {
 			isa = PBXGroup;
 			children = (
+				7A1BDBB325CF3A0C009ECFAD /* README.md */,
 				7A416A6C25CD95DC0085E365 /* MotionDetectionTest */,
 				7A416A6B25CD95DC0085E365 /* Products */,
 			);
@@ -56,15 +106,64 @@
 		7A416A6C25CD95DC0085E365 /* MotionDetectionTest */ = {
 			isa = PBXGroup;
 			children = (
+				7A416AC025CDE3650085E365 /* VideoSources */,
+				7A416A8A25CD987D0085E365 /* VideoProcessingPipeline */,
 				7A416A6D25CD95DC0085E365 /* AppDelegate.swift */,
-				7A416A6F25CD95DC0085E365 /* SceneDelegate.swift */,
 				7A416A7125CD95DC0085E365 /* ViewController.swift */,
+				7A416ABD25CDE3380085E365 /* SceneDelegate.swift */,
+				7A416A8325CD98110085E365 /* CapturePreviewView.swift */,
 				7A416A7325CD95DC0085E365 /* Main.storyboard */,
 				7A416A7625CD95DD0085E365 /* Assets.xcassets */,
 				7A416A7825CD95DD0085E365 /* LaunchScreen.storyboard */,
 				7A416A7B25CD95DD0085E365 /* Info.plist */,
 			);
 			path = MotionDetectionTest;
+			sourceTree = "<group>";
+		};
+		7A416A8A25CD987D0085E365 /* VideoProcessingPipeline */ = {
+			isa = PBXGroup;
+			children = (
+				7A416A9825CD987D0085E365 /* VideoProcessingPipeline.swift */,
+				7A416A8E25CD987D0085E365 /* PipelineUnits */,
+				7A1BDBB425CF3B07009ECFAD /* Frame Sources */,
+				7A416A9725CD987D0085E365 /* VideoPreProcessing.swift */,
+				7A416A8B25CD987D0085E365 /* VideoVisionAnalysis.swift */,
+				7A416A9425CD987D0085E365 /* VideoOpticalFlowVisualisation.swift */,
+				7A416A9925CD987D0085E365 /* Helpers */,
+			);
+			path = VideoProcessingPipeline;
+			sourceTree = "<group>";
+		};
+		7A416A8E25CD987D0085E365 /* PipelineUnits */ = {
+			isa = PBXGroup;
+			children = (
+				7A416A8F25CD987D0085E365 /* RunnablePipelineUnit.swift */,
+				7A416A9025CD987D0085E365 /* VideoPipelineError.swift */,
+				7A416A9125CD987D0085E365 /* VideoPipelineUnit.swift */,
+				7A416A9225CD987D0085E365 /* VideoReceivingPipelineUnit.swift */,
+				7A416A9325CD987D0085E365 /* VideoSendingPipelineUnit.swift */,
+			);
+			path = PipelineUnits;
+			sourceTree = "<group>";
+		};
+		7A416A9925CD987D0085E365 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7A416A9A25CD987D0085E365 /* Math.swift */,
+				7A416A9B25CD987D0085E365 /* CGImage+RawBytes.swift */,
+				7A416A9C25CD987D0085E365 /* MLMultiArray+Image.swift */,
+				7A416A9D25CD987D0085E365 /* OpticalFlowVisualizerFilter.swift */,
+				7A416A9E25CD987D0085E365 /* OpticalFlowVisualizer.cikernel */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7A416AC025CDE3650085E365 /* VideoSources */ = {
+			isa = PBXGroup;
+			children = (
+				7A416AC125CDE3650085E365 /* testvideo.mp4 */,
+			);
+			path = VideoSources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +226,8 @@
 				7A416A7A25CD95DD0085E365 /* LaunchScreen.storyboard in Resources */,
 				7A416A7725CD95DD0085E365 /* Assets.xcassets in Resources */,
 				7A416A7525CD95DC0085E365 /* Main.storyboard in Resources */,
+				7A416AC225CDE3650085E365 /* testvideo.mp4 in Resources */,
+				7A416AB225CD987D0085E365 /* OpticalFlowVisualizer.cikernel in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +238,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A416AB125CD987D0085E365 /* OpticalFlowVisualizerFilter.swift in Sources */,
+				7A416A8425CD98110085E365 /* CapturePreviewView.swift in Sources */,
+				7A416AA825CD987D0085E365 /* VideoSendingPipelineUnit.swift in Sources */,
+				7A416AAD25CD987D0085E365 /* VideoProcessingPipeline.swift in Sources */,
+				7A416AB025CD987D0085E365 /* MLMultiArray+Image.swift in Sources */,
+				7A416AA225CD987D0085E365 /* VideoCapture.swift in Sources */,
+				7A416AA525CD987D0085E365 /* VideoPipelineError.swift in Sources */,
+				7A416AA425CD987D0085E365 /* RunnablePipelineUnit.swift in Sources */,
+				7A416AA625CD987D0085E365 /* VideoPipelineUnit.swift in Sources */,
+				7A416AAC25CD987D0085E365 /* VideoPreProcessing.swift in Sources */,
 				7A416A7225CD95DC0085E365 /* ViewController.swift in Sources */,
+				7A416AAE25CD987D0085E365 /* Math.swift in Sources */,
 				7A416A6E25CD95DC0085E365 /* AppDelegate.swift in Sources */,
-				7A416A7025CD95DC0085E365 /* SceneDelegate.swift in Sources */,
+				7A416AA925CD987D0085E365 /* VideoOpticalFlowVisualisation.swift in Sources */,
+				7A416AA325CD987D0085E365 /* VideoWriter.swift in Sources */,
+				7A416ABE25CDE3380085E365 /* SceneDelegate.swift in Sources */,
+				7A416AAF25CD987D0085E365 /* CGImage+RawBytes.swift in Sources */,
+				7A416AA725CD987D0085E365 /* VideoReceivingPipelineUnit.swift in Sources */,
+				7A416AA125CD987D0085E365 /* VideoVisionAnalysis.swift in Sources */,
+				7A416AAA25CD987D0085E365 /* VideoReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
